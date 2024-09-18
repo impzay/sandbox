@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sandbox 1</title>
+    <h1 class="header">Click the button</h1>
+<style type="text/css">
+    body{
+        background-color: lightslategray;
+    }
+    .header{
+        font-family: Helvetica;
+        text-align: center;
+        color: whitesmoke;
+    }
+    .testButton{
+        display: block;
+        margin: auto;
+       border: 0;
+       line-height: 2.5;
+       padding: 0 20px;
+       font-size: 1rem;
+       text-align: center;
+       color: #fff;
+       cursor: pointer;
+       text-shadow: 1px 1px 1px #000;
+       border-radius: 10px;
+       background-color: rgba(50, 150, 50, 1);
+       transition-duration: 0.4s;
+   }
+       .testButton:hover{
+        background-color: rgba(50, 200, 50, 1.0);
+        text-decoration: none;
+        outline: none; 
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+       }
+       .testButton.clicked{
+        background-color: royalblue;
+       }
+</style>
+</head>
+    <body>
+        <button  id = "skib" class="testButton" type="button" onclick="addimage()"> Click here.
+        </button>
+
+        <div id="imageContainer"> </div>
+        <script type="text/javascript">
+                function button(){
+              var button = document.getElementById("skib");
+              button.classList.toggle("clicked");
+            }
+
+            function addimage(){
+                var container = document.getElementById('imageContainer');
+            }
+            //creates new image element
+            var img = document.createElement('img');
+            img.src = 'hollowpurple.jpg';
+
+            
+            //checks if image is added
+            if(container.querySelector('img'){
+                return;//if image exists do nothing
+            }
+            container.appendChild(img);
+        </script>
+    </body>
+</html>
