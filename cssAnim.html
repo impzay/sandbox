@@ -7,7 +7,7 @@
 
 	<style type="text/css">
 		body{
-			background-color: lightslategray;
+			background-color: darkgrey;
 		}	
 		.square{
 			height:50px;
@@ -28,6 +28,9 @@
 			animation-duration: 4s;
 			animation-iteration-count: infinite;
 			animation-direction: reverse;
+			padding: 25px;
+			background-color: mintcream;
+			border-radius: 5px;
 		}
 
 		@keyframes box{
@@ -78,8 +81,65 @@
 			height: 50px;
 			width: 50px;
 			border-radius: 50%;
+			margin-left: 5%;
+			margin-bottom: 50px;
+			margin-top: 150px;
+			background-color: skyblue;
+			animation-name: circleAnim;
+			animation-duration: 7s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes circleAnim{
+			0%{margin-left: 15%; margin-top: 150px; margin-bottom: 50px}
+			25%{margin-left: 49%; margin-top:50px; margin-bottom: 150px}
+			50%{margin-left: 85%;margin-top: 150px; margin-bottom: 50px}
+			75%{margin-left: 49%; margin-top:50px; margin-bottom: 150px;}
+			100%{margin-left: 15%; margin-top: 150px; margin-bottom: 50px}
+		}
+		@keyframes spinAnim{
+			0%{transform:rotate(0deg);}
+			25%{transform:rotate(90deg);}
+			50%{transform:rotate(180deg);}
+			75%{transform:rotate(270deg);}
+			100%{transform:rotate(360deg);}
+		}
+		.box2{
+			height: 50px;
+			width: 50px;
 			margin:auto;
-			background-image: url("moltenball.png");
+			padding-top: 50px;
+			background-color: green;
+			animation-name: spinAnim;
+			animation-duration:2s;
+			animation-iteration-count: infinite;
+		}
+		a{
+
+			color: hotpink;
+		}
+		a:link{
+			text-decoration: none;
+			color:red;
+		}
+		a:visited{
+			text-decoration: none;
+			color:green;
+		}
+		a:hover{
+			text-decoration: underline;
+			color:hotpink;
+		}
+		a:active{
+			text-decoration: underline;
+			color:blue;
+		}
+		.links{
+			height:50px;
+			width: 100px;
+			margin-left: 800px;
+			background-color: white;
+			padding: 5px;
+			border-radius: 5px;
 		}
 	</style>
 </head>
@@ -90,5 +150,7 @@
 		<span class="tooltiptext">yipeee</span>
 	</div>
 	<div class="circle"></div>
+	<div class="box2"></div>
+	<p><a href="jsPractice.html" class = "links">this is a link</a></p>
 </body>
 </html>

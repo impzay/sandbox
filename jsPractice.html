@@ -37,12 +37,32 @@
        .testButton.clicked{
         background-color: royalblue;
        }
+       a{
+            color: hotpink;
+
+        }
+        a:link{
+            text-decoration: none;
+            color:red;
+        }
+        a:visited{
+            text-decoration: none;
+            color:green;
+        }
+        a:hover{
+            text-decoration: underline;
+            color:hotpink;
+        }
+        a:active{
+            text-decoration: underline;
+            color:blue;
+        }
 </style>
 </head>
     <body>
         <button  id = "skib" class="testButton" type="button" onclick="addimage()"> Click here.
         </button>
-
+        <p><a href="ccsAnim.html">to animations</p>
         <div id="imageContainer"> </div>
         <script type="text/javascript">
                 function button(){
