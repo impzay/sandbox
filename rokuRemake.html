@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>roku screensaver remake</title>
+	<style type="text/css">
+
+		body{
+			background-color:black;
+		}
+		.frontWords{
+			font-family: Helvetica;
+			font-size: 50px;
+			opacity: 100%;
+			color: hotpink;
+			text-shadow: 1px 1px 1px;
+			animation-name: fallingF;
+			animation-duration: 12.5s;
+			animation-iteration-count: infinite;
+			margin-left:45%;
+		}
+		.midWords{
+			transform: translateX(50px);
+			font-family: Helvetica;
+			font-size: 25px;
+			opacity: 65%;
+			color: hotpink;
+			text-shadow: 1px 1px 1px;
+			animation-name: fallingF;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+			margin-left:65%;
+		}
+		.backWords{
+			transform: translateX(-25px);
+			font-family: Helvetica;
+			font-size: 15px;
+			opacity: 35%;
+			color: hotpink;
+			text-shadow: 1px 1px 1px;
+			animation-name: fallingF;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			margin-left:15%;
+		}
+		.backWords2{
+			font-family: Helvetica;
+			font-size: 15px;
+			opacity: 35%;
+			color: hotpink;
+			text-shadow: 1px 1px 1px;
+			animation-name: fallingF;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			margin-left:75%;
+		}
+		@keyframes fallingF{
+			0%{transform: translateY(-100px);}
+			50%{}
+			100%{transform: translateY(1000px);}
+		}
+	</style>
+</head>
+<body>
+	<div class="frontWords"> skib </div>
+	<div class="midWords"> skib</div>
+	<div class="backWords"> skib</div>
+	<div class="backWords2"> skib</div>
+</body>
+</html>
